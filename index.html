@@ -1,0 +1,167 @@
+<!DOCTYPE html> 
+<html lang="en"> <!-- Sets the page language to English -->
+
+<head> <!-- Holds page settings and links that are not shown as page content -->
+    <meta charset="UTF-8"> <!-- Lets the page show letters, numbers, and symbols correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Helps the page fit correctly on phones, tablets, and computers -->
+    <title>Shanae Swasey Hire Me | DWDD1720</title> <!-- Sets the name shown on the browser tab -->
+
+    <!-- STYLESHEETS --> <!-- Connects the CSS files that control how the page looks -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Helps the page look more consistent in different browsers -->
+    <link rel="stylesheet" href="styles/small.css"> <!-- Controls how the page looks on smaller screens -->
+    <link rel="stylesheet" href="styles/larger.css"> <!-- Controls how the page changes on larger screens -->
+
+    <!--GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Connects the page to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Connects to the server that stores the font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> <!-- Loads the Google font onto the page -->
+
+    <!--OPEN GRAPH TAGS--> <!-- Controls the title, description, and image shown when the website link is shared -->
+    <!-- Sets the title shown when the website link is shared -->
+    <meta property="og:title" content="Shanae Swasey Hire Me | DWDD1720" />
+
+    <!-- Sets the description shown when the website link is shared -->
+    <meta property="og:description" content="Practice Page for Shanae Swasey's DD1720 Hire Me Assignment." />
+
+    <!-- Sets the image shown when the website link is shared -->
+    <meta property="og:image" content="https://shanaeswasey.github.io/1720-tagalong/images/opengraph.jpg" />
+
+    <!-- Sets the website link used when the page is shared -->
+    <meta property="og:url" content="https://shanaeswasey.github.io/1720-tagalong/" />
+
+    <!-- Sets the logo shown with the website information -->
+    <meta property="og:logo" content="https://shanaeswasey.github.io/1720-tagalong/images/motorcycle-icon.svg" />
+
+    <!-- Tells websites that this link is a website -->
+    <meta property="og:type" content="website" />
+
+
+
+    <!--FAV ICON LINKS--> <!-- Connects the favicon images used in the browser tab and on devices -->
+    <!-- Uses a 96x96 PNG image as a favicon -->
+    <link rel="icon" type="image/png" href="/1720-tagalong/favicon-96x96.png" sizes="96x96" />
+
+    <!-- Uses the SVG version of the favicon -->
+    <link rel="icon" type="image/svg+xml" href="/1720-tagalong/favicon.svg" />
+
+    <!-- Uses the standard favicon file -->
+    <link rel="shortcut icon" href="/1720-tagalong/favicon.ico" />
+
+    <!-- Sets the icon used when the website is saved to an Apple device -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/1720-tagalong/apple-touch-icon.png" />
+
+    <!-- Sets the website name shown when saved to an Apple device -->
+    <meta name="apple-mobile-web-app-title" content="Tag Along" />
+
+    <!-- Connects the file that stores extra favicon information -->
+    <link rel="manifest" href="/1720-tagalong/site.webmanifest" />
+
+
+
+    <!--SCRIPTS--> <!-- Connects the JavaScript files that make parts of the page work -->
+    <!-- Makes the hamburger navigation menu open and close -->
+    <script src="scripts/navigation.js" defer></script>
+
+    <!-- Automatically puts the current year in the footer -->
+    <script src="scripts/year.js" defer></script>
+
+</head> <!-- Ends the section that holds the page settings and linked files -->
+
+<body> <!-- Starts everything that will actually show on the webpage -->
+    <header> <!-- Starts the top section of the page that holds the logo, name, and menu button -->
+        <!-- Shows the logo at the top of the page -->
+        <img src="images/motorcycle-icon.svg" alt="Site Logo" width="16" height="16">
+        <!-- Shows the site name next to the logo -->
+        <span>Tag Along</span>
+        <!-- Creates the hamburger button used to open the navigation menu -->
+        <button id="hamburger" class="hamburger" aria-label="Nav Link Button"></button>
+    </header> <!-- Ends the top section of the page -->
+
+    <!-- Starts the navigation menu -->
+    <nav id="navbar">
+        <ul> <!-- Starts the list of navigation links -->
+            <!-- Link to the Home Page -->
+            <li><a href="#">Home</a></li>
+            <!-- Shows that the Canyon Ride is the page currently being viewed -->
+            <li class="active"><a href="#">Canyon Ride</a></li>
+            <!-- Link to the Other Rides Page -->
+            <li><a href="#">Other Rides</a></li>
+        </ul> <!-- Ends the list of navigation links -->
+    </nav> <!-- Ends the navigation menu -->
+
+    <main> <!-- Starts the main content area of the page -->
+        <!-- Shows the main page heading -->
+        <h1>Canyon Motorcycle Ride</h1>
+
+        <!-- Starts the responsive hero image -->
+        <picture class="hero">
+            <!-- Uses the small hero image on screens 610px wide or smaller -->
+            <source media="(max-width: 610px)" srcset="images/hero-small-610.webp">
+
+            <!-- Uses the medium hero image on screens 900px wide or smaller -->
+            <source media="(max-width: 900px)" srcset="images/hero-medium-900.webp">
+
+            <!-- Uses the large hero image when the screen is bigger -->
+            <img src="images/hero-large-1200.webp" alt="Mountain Goats">
+
+            <!-- Creates the button over the hero image -->
+            <a href="#">Ask to Join</a>
+        </picture>
+
+        <!-- Starts the video section -->
+        <!-- Starts the video and shows the poster image before it plays -->
+        <video controls poster="media/poster.webp" width="1280" height="720">
+            <!-- Loads the MP4 version of the video -->
+            <source src="media/tagalongvideo.mp4" type="video/mp4" />
+            <!-- Loads the WebM version of the video -->
+            <source src="media/tagalongvideo.webm" type="video/webm" />
+            <!-- Adds English subtitles and makes them the default -->
+            <track label="English" kind="subtitles" srclang="en" src="media/captions-en.vtt" default />
+            <!-- Adds Spanish subtitles -->
+            <track label="Español" kind="subtitles" srclang="es" src="media/captions-es.vtt">
+        </video> <!-- Ends the video -->
+
+        <!-- Starts the transcript section that can open and close -->
+        <details>
+             <!-- Shows the title users click to open the transcript -->
+            <summary>Video Transcript</summary>
+            <!-- Shows the written version of what is said in the video -->
+            <p>Hey guys! I'm going to go ride my motorcycle this weekend up the canyon. Come join me!</p>
+        </details> <!-- Ends the transcript section -->
+
+    </main> <!-- Ends the main content area -->
+
+    <!-- Starts the footer at the bottom of the page -->
+    <footer>
+         <!-- Holds the social media links -->
+        <section class="social">
+
+            <!-- Links to GitHub -->
+            <a href="https://www.github.com" target="_blank"><img src="images/icon-github.svg" alt="GitHub Icon"
+                    width="16" height="16"></a>
+
+             <!-- Links to LinkedIn -->
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/icon-linkedin.svg" alt="LinkedIn Icon"
+                    width="16" height="16"></a>
+
+            <!-- Links to YouTube -->
+            <a href="https://www.youtube.com" target="_blank"><img src="images/icon-youtube.svg" alt="Youtube Icon"
+                    width="16" height="16"></a>
+
+            <!-- Links to Facebook -->
+            <a href="https://www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt="Facebook Icon"
+                    width="16" height="16"></a>
+        </section>  <!-- Ends the social media links -->
+
+        <!-- Shows the current year, your name, and course name -->
+        <p>&copy; <span id="currentyear"></span> &bull; Shanae Swasey &bull; DWDD1720</p>
+    
+    </footer><!-- Ends the footer -->
+</body> <!-- Ends everything shown on the page -->
+
+</html> <!-- Ends the entire HTML document -->
