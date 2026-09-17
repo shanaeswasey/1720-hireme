@@ -21,12 +21,12 @@
    <!-- Loads the Google font onto the page -->
    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
- <!--OPEN GRAPH TAGS--> <!-- Controls the title, description, and image shown when the website link is shared -->
+    <!--OPEN GRAPH TAGS--> <!-- Controls the title, description, and image shown when the website link is shared -->
     <!-- Sets the title shown when the website link is shared -->
     <meta property="og:title" content="Shanae Swasey Hire Me | DWDD1720" />
 
     <!-- Sets the description shown when the website link is shared -->
-    <meta property="og:description" content="Practice Page for Shanae Swasey's DWDD1720 Hire Me Assignment." />
+    <meta property="og:description" content="Practice Page for Shanae Swasey's DWD1720 Hire Me Assignment." />
 
     <!-- Sets the image shown when the website link is shared -->
     <meta property="og:image" content="https://shanaeswasey.github.io/1720-hireme/images/opengraph.jpg" />
@@ -70,6 +70,10 @@
     <!-- Automatically puts the current year in the footer -->
     <script src="scripts/year.js" defer></script>
 
+    <!--Links the form script-->
+    <script src="scripts/form.js" defer></script>
+
+
 </head> <!-- Ends the section that holds the page settings and linked files -->
 
 <body> <!-- Starts everything that will actually show on the webpage -->
@@ -87,7 +91,7 @@
             <!-- Link to the Home Page -->
             <li><a href="#">Home</a></li>
             <!-- Shows that the Join Our Team is the page currently being viewed -->
-            <li class="active"><a href="index.html">Join Our Team</a></li>
+            <li><a href="index.html">Join Our Team</a></li>
             <!-- Link to the About Us Page -->
             <li><a href="#">About Us</a></li>
         </ul> <!-- Ends the list of navigation links -->
@@ -95,47 +99,12 @@
 
     <main> <!-- Starts the main content area of the page -->
         <!-- Shows the main page heading -->
-        <h1>Join Our Team</h1>
+        <h1>Application Results</h1>
+
+        <div id="results" class="results"></div>
 
 
-        <form action="results.html" method="get">
-        <label>First Name
-            <input type="text" name="first" required autocomplete="given-name" placeholder="First Name">
-        </label>
-
-        <label>Last Name
-            <input type="text" name="last" required autocomplete="family-name" placeholder="Last Name">
-        </label>
-
-        <label>Cell Phone
-            <input type="tel" name="phone" required autocomplete="tel" placeholder="(000) 123-4567">
-        </label>
-
-        <label>Email
-            <input type="email" name="email" required autocomplete="email" placeholder="first.last@gmail.com">
-        </label>
-
-        <label>Portfolio URL
-            <input type="url" name="url" required autocomplete="url" placeholder="https://name@github.com">
-        </label>
-
-        <label>Applying As
-            <select name="who" required>
-                <option value="Master">Master Designer</option>
-                <option value="Apprentice">Apprentice Designer</option>
-                <option value="Student">Student Designer</option>
-                <option value="Employer">Employer Designer</option>
-            </select>
-            </label>
-
-            <label>Comments
-                <textarea name="comments" rows="5" placeholder="Enter your message"></textarea>
-            </label>
-           
-            <input type="submit" value="Apply Now">
-
-
-        </form>
+       
 
       
     </main> <!-- Ends the main content area -->
