@@ -25,13 +25,13 @@ nav ul {
 
 /* Controls the look of each navigation link */
 nav a {
-    border-left: solid 1px rgba(0,0,0,0.2); /* Adds a line to the right side of the last link */
+    border-left: solid 1px var(--color-mygrey-30); /* Adds a line to the right side of the last link */
     padding: .4rem 20px;
 }
 
 /* Adds a divider line to the last navigation link */
 nav li:last-child a {
-    border-right: solid 1px rgba(0,0,0,0.2); /* Adds a line to the right side of the last link */
+    border-right: solid 1px var(--color-mygrey-30); /* Adds a line to the right side of the last link */
 }
 
 /******************************** HAMBURGER ********************************/
